@@ -5,6 +5,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import {ClickAButton} from "./click-a-button/click-a-button";
 
 export default function App() {
   return (
@@ -21,6 +22,9 @@ export default function App() {
               <li>
                 <Link to="/users">Users</Link>
               </li>
+              <li>
+                <Link to="/click-a-button">Click a button</Link>
+              </li>
             </ul>
           </nav>
 
@@ -32,6 +36,9 @@ export default function App() {
             </Route>
             <Route path="/users">
               <Users />
+            </Route>
+            <Route path="/click-a-button">
+              <ClickAButton />
             </Route>
             <Route path="/">
               <Home />
