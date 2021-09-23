@@ -1,3 +1,3 @@
-import {useClickAButton} from './click-a-button';
+import {UseClickAButton} from './useClickAButton'
 
-export default useClickAButton
+export {UseClickAButton}
