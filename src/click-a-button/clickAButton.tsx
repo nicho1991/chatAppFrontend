@@ -1,3 +1,4 @@
+import React from 'react'
 import {UseClickAButton} from "./hooks/index";
 
 export const ClickAButton = () => {
