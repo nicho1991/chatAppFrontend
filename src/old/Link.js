@@ -1,3 +1,4 @@
+/*
 import React, { Component } from 'react'
 
 class Link extends Component {
@@ -16,4 +17,4 @@ class Link extends Component {
     }
 }
 
-export default Link
+export default Link*/

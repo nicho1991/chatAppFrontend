@@ -32,7 +32,8 @@
         "prettier": "prettier src -check",
         "lint-staged": "lint-staged --config lint-staged.js",
         "husky-install": "husky install",
-        "lint": "eslint src --color"
+        "lint": "eslint src --color",
+        "typescript": "tsc --project tsconfig.json --noEmit"
     },
     "eslintConfig": {
         "extends": [
