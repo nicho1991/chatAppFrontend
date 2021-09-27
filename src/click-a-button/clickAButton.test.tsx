@@ -6,6 +6,7 @@ import { UseClickAButton } from "./hooks";
 const hooks = { UseClickAButton };
 jest.mock("./hooks");
 
+// see https://charles-stover.medium.com/writing-testable-react-components-with-hooks-23441ee582d5
 describe("ClickAButton", () => {
   test("should render with mocked value", () => {
     const STATE_SPY = jest.spyOn(hooks, "UseClickAButton");
