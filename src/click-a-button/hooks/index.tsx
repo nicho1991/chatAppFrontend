@@ -1,3 +1,3 @@
-import {UseClickAButton} from './useClickAButton'
+import { UseClickAButton } from './useClickAButton'
 
-export {UseClickAButton}
+export { UseClickAButton }

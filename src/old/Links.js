@@ -1,3 +1,4 @@
+/*
 import React, { Component } from 'react'
 import Link from './Link'
 import { Query } from 'react-apollo'
@@ -62,4 +63,4 @@ class Links extends Component {
     }
 }
 
-export default Links
+export default Links*/
