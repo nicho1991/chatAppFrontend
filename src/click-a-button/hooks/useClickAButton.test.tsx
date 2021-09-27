@@ -1,33 +1,18 @@
-import * as React from "react";
+import { renderHook, act } from "@testing-library/react-hooks";
 import { UseClickAButton } from "./index";
-import { render, act } from "@testing-library/react";
-import { IUseClickAButton } from "./useClickAButton";
-
-function setup() {
-  const returnVal = {} as IUseClickAButton;
-  function TestComponent() {
-    Object.assign(returnVal, UseClickAButton());
-    return null;
-  }
-  render(<TestComponent />);
-  return returnVal;
-}
 
 describe("component", () => {
-  let clickAButton: IUseClickAButton;
-  beforeEach(() => {
-    clickAButton = setup();
-  });
-
   test("initial of zero", () => {
-    expect(clickAButton.total).toBe(0);
+    const { result } = renderHook(() => UseClickAButton());
+    expect(result.current.total).toBe(0);
   });
 
   test("1 press increments to 1", () => {
+    const { result } = renderHook(() => UseClickAButton());
     act(() => {
-      clickAButton.handleClick();
+      result.current.handleClick();
     });
 
-    expect(clickAButton.total).toBe(1);
+    expect(result.current.total).toBe(1);
   });
 });
